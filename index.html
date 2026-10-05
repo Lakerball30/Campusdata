@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Data Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Campus Data Analyzer</h1>
+
+    <div class="controls">
+
+        <label>Status</label>
+        <select id="status">
+            <option value="">All</option>
+            <option value="completed">Completed</option>
+            <option value="scheduled">Scheduled</option>
+            <option value="cancelled">Cancelled</option>
+        </select>
+
+        <label>Category</label>
+        <select id="category">
+            <option value="">All</option>
+            <option value="social">Social</option>
+            <option value="career">Career</option>
+            <option value="academic">Academic</option>
+            <option value="arts">Arts</option>
+        </select>
+
+    </div>
+
+    <p id="summary"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Attendance</th>
+                <th>Capacity</th>
+                <th>Fill Rate</th>
+            </tr>
+        </thead>
+
+        <tbody id="rows">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
